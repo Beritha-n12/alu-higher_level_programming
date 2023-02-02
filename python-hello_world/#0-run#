@@ -1,0 +1,32 @@
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# ls
+README.md
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 0-run
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 0-run
+chmod: cannot access '0-run': No such file or directory
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# ls
+README.md
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 0-run
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 0-run
+chmod: cannot access '0-run': No such file or directory
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# ls
+README.md
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 0-run
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 0-
+chmod: cannot access '0-run': No such file or directory
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# ls
+README.md
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# touch 0-run
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# ls
+0-run  README.md
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 0-run
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 0-
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# touch 1-run_inline
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 1-run_inline
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 1-run_inline
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# touch 2-print.py
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs 2-print.py
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# chmod u+x 2-print.py
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# touch 3-print_number.py
+root@3d18e6935548:/alu-higher_level_programming/python-hello_world# emacs
+~o#!/bin/bash
+python3 $PYFILE
