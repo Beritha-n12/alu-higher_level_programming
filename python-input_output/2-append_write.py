@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""Defines a function that prints n number of lines from a file"""
+"""
+A function that appends a string to a text file (UTF8)
+Returns the number of characters written
+"""
 
 
-def read_lines(filename="", nb_lines=0):
-    with open(filename, "r") as f:
-        if nb_lines <= 0:
-            print(f.read(), end="")
-        else:
-            for line in f:
-                print(line, end="")
-                nb_lines -= 1
-                if nb_lines == 0:
-                    break
+def append_write(filename="", text=""):
+    """
+    Calling the function
+    """
+    with open(filename, "a", encoding="UTF8") as writefile:
+        return writefile.write(text)
