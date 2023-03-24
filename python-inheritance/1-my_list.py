@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+"""
+Class
+"""
+
+
 class MyList(list):
-    """
-    module "1-my_list"
-    """
+    """Class MyList"""
+
+    def __init__(self):
+        """Inherit the mother class"""
+        super().__init__()
+
     def print_sorted(self):
-        """
-        print_sorted
-        """
-        tmp_list = self.copy()
-        tmp_list.sort()
-        print(tmp_list)
+        """prints sorted list"""
+        print(sorted(self))
