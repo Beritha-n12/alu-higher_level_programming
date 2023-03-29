@@ -1,4 +1,3 @@
--- get a count of shows by genre
-SELECT tv_genres.name AS genre, COUNT(tv_show_genres.genre_id) AS number_shows
-FROM tv_show_genres LEFT JOIN tv_genres ON tv_show_genres.genre_id=tv_genres.id
-GROUP BY genre HAVING number_shows > 0 ORDER BY number_shows DESC
+-- lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows
+SELECT a.title, c.name FROM tv_shows a LEFT JOIN tv_show_genres b ON a.id = b.show_id LEFT JOIN tv_genres c ON b.genre_id = c.id ORDER BY a.title ASC, c.name ASC;
+
