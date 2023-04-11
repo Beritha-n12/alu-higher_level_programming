@@ -1,8 +1,7 @@
 #!/usr/bin/python3
     """adding two integers
-       a (int | float)
-       b (int | float)
     """
+
 
 def add_integer(a, b=98):
     """
