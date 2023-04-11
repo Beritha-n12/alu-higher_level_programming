@@ -1,31 +1,36 @@
 #!/usr/bin/python3
+'''
+    Divides matrix by a divisor
+    matrix (list)
+    div (division factor)
+'''
 
 
 def matrix_divided(matrix, div):
-    """
-    divides all elements of a matrix, elements must be ->
-        int or float type
-    """
+    '''
+        divides a matrix value by a divisor
+    '''
+    new_matrix = []
+    try:
+        length = len(matrix[0])
+    except:
+        pass
+    int_err = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
-        return matrix
-    elif div == 0:
+    if div == 0:
         raise ZeroDivisionError("division by zero")
-        return matrix
 
-    prevRowLen = -1
-    new_list = []
     for row in matrix:
-        if (prevRowLen != len(row) and prevRowLen != -1):
+        new_row = []
+        if not isinstance(row, list):
+            raise TypeError(int_err)
+        if length != len(row):
             raise TypeError("Each row of the matrix must have the same size")
-            return matrix
-        for ele in row:
-            if not isinstance(ele, (int, float)):
-                raise TypeError("matrix must be a matrix (list of lists) of" +
-                                " integers/floats")
-                return matrix
-            else:
-                new_list.append(round(ele / div, 2))
-        prevRowLen = len(row)
-
-    return new_list
+        for l in row:
+            if not isinstance(l, (int, float)):
+                raise TypeError(int_err)
+            result = round(l / div, 2)
+            new_row.append(result)
+        new_matrix.append(new_row)
+    return new_matrix
