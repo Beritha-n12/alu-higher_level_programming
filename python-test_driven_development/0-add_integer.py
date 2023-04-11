@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 
-
 def add_integer(a, b=98):
     """
-    adding an integer
-    the unit tests located in tests/0-add_integer.txt
+    adds an integer
+    unit tests located in tests/0-add_integer.txt
     checks for type errors
     """
     if not isinstance(a, int):
