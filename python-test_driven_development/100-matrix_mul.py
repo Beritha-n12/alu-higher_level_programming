@@ -6,7 +6,7 @@ matrix multiplication
 
 def matrix_mul(m_a, m_b):
     """
-    produces a result of matrix multiplaction of two matrices
+    produces a result of matrix multiplaction of two matricies
     checks for TypeError with unit testing
     """
     if not isinstance(m_a, list):
