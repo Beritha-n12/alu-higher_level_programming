@@ -8,7 +8,7 @@ def add_integer(a, b=98):
     """
     adds an integer
     unit tests located in tests/0-add_integer.txt
-    checks for type errors
+    checks for type errors with unit testing
     """
     if not isinstance(a, int):
         if isinstance(a, float):
