@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+adding new integers
+"""
 
 def add_integer(a, b=98):
     """
