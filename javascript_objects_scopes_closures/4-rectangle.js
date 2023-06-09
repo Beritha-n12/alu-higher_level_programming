@@ -1,30 +1,28 @@
 #!/usr/bin/node
-module.imports = class Rectangle {
-  constructor(w, h) {
-    if (w < 0 && h < 0) {
-      return {};
+class Rectangle {
+    constructor(w, h) {
+      if (w < 0 && h < 0) {
+        return {};
+      }
+      this.width = w;
+      this.height = h;
     }
-    this.width = w;
-    this.height = h;
-  }
-  
-  print() {
-    if (this.width < 0 && this.height < 0) {
-      return;
+    print() {
+      if (this.width < 0 && this.height < 0) {
+        return;
+      }
+    
+      const row = 'X'.repeat(this.width);
+      for (let i = 0; i < this.height; i++) {
+        console.log(row);
+      }
     }
-  
-    const row = 'X'.repeat(this.width);
-    for (let i = 0; i < this.height; i++) {
-      console.log(row);
+    rotate() {
+      [this.width, this.height] = [this.height, this.width];
     }
-  }
-  
-  rotate() {
-    [this.width, this.height] = [this.height, this.width];
-  }
-  
-  double() {
-    this.width *= 2;
-    this.height *= 2;
-  }
-};
+    double() {
+      this.width *= 2;
+      this.height *= 2;
+    }
+}
+module.exports = Rectangle;  
