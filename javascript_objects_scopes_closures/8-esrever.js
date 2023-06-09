@@ -1,4 +1,8 @@
-#!/usr/bin/node
-exports.nbOccurences = function (list, searchElement) {
-    return list.filter((n) => n === searchElement).length;
-  };
+#!/usr/bin/Node
+exports.esrever = function (list) {
+  var reversedList = [];
+  for (var i = list.length - 1; i >= 0; i--) {
+    reversedList.push(list[i]);
+  }
+  return reversedList;
+};
