@@ -8,11 +8,10 @@ module.exports = class Rectangle {
   }
 
   print () {
-    if (this.width < 0 || this.height < 0) {
-        return;
-    }
+    if (thid.width < 0 || this.height < 0)
+      return;
     const row = 'X'.repeat(this.width);
-    for (let i = 0; i < this.height; i++) {
+    for (let i =0; i < this.height; i++) {
         console.log(row);
     }
   }  
