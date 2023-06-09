@@ -18,6 +18,7 @@ class Rectangle {
       console.log(row);
     }
   }
+
   rotate () {
     [this.width, this.height] = [this.height, this.width];
   }
@@ -27,5 +28,4 @@ class Rectangle {
     this.height *= 2;
   }
 }
-
-  module.exports = Rectangle;  
+module.exports = Rectangle;
