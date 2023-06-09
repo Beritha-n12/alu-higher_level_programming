@@ -5,10 +5,11 @@ class Rectangle {
     this.width = w;
     this.height = h;
   }
-
 }
 
-  const r1 = new Rectangle(2, 3);
+module.exports = Rectangle;
+
+const r1 = new Rectangle(2, 3);
 console.log(r1);
 console.log(r1.width);
 console.log(r1.height);
@@ -22,5 +23,3 @@ const r3 = new Rectangle(2);
 console.log(r3);
 console.log(r3.width);
 console.log(r3.height);
-
-module.exports = Rectangle;
