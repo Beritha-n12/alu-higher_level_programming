@@ -1,12 +1,10 @@
 #!/usr/bin/node
-
 class Rectangle {
-  constructor (width, height) {
+  constructor (w, h) {
     this.width = w;
     this.height = h;
   }
 }
-
 module.exports = Rectangle;
 
 const r1 = new Rectangle(2, 3);
