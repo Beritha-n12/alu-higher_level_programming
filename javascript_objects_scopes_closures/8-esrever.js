@@ -1,6 +1,6 @@
 #!/usr/bin/Node
 exports.esrever = function (list) {
-  const input = []
+  const input = [];
   for (let i = list.length - 1; i >= 0; i--) {
     input.push(list[i]);
   }
