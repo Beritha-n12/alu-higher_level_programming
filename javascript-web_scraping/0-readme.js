@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const fs = require('fs');
-
 function readFile (filePath) {
   fs.readFile(filePath, 'utf-8', (err, data) => {
     if (err) {
@@ -12,8 +11,8 @@ function readFile (filePath) {
 }
 
 if (process.argv.length < 3) {
-    console.log('Please provide the file path as an argument.');
+  console.log('Please provide the file path as an argument.');
   } else {
-    const filePath = process.argv[2];
-    readFile(filePath);
-  }
+  const filePath = process.argv[2];
+  readFile(filePath);
+}
