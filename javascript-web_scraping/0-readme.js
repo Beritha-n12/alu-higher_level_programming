@@ -10,10 +10,3 @@ function readFile(filePath) {
     }
   });
 }
-
-if (process.argv.length < 3) {
-  console.log('Please provide the file path as an argument.');
-} else {
-  const filePath = process.argv[2];
-  readFile(filePath);
-}
